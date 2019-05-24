@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name        Pocket Dark
+@version     1.1.1
+@namespace   StylishThemes
+@author      StylishThemes
+@description Dark theme for Pocket
+@homepageURL https://github.com/StylishThemes/Pocket-Dark
+@supportURL  https://github.com/StylishThemes/Pocket-Dark/issues
+@updateURL   https://raw.githubusercontent.com/StylishThemes/Pocket-Dark/master/pocket-dark.user.css
+@license     CC-BY-SA-4.0
+==/UserStyle== */
+
 @-moz-document domain('getpocket.com') { 
 
 #content .wrapper, #page_reader, body {  background-color: #111 !important }

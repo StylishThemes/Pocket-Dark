@@ -1,0 +1,32 @@
+{
+  "name": "pocket-dark",
+  "title": "Quora Dark",
+  "version": "1.1.1",
+  "description": "A dark Pocket theme",
+  "license": "CC-BY-SA-4.0",
+  "repository": "StylishThemes/Pocket-Dark",
+  "homepage": "https://github.com/StylishThemes/Pocket-Dark",
+  "main": "pocket-dark.user.css",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-silverwind": "^2.1.0",
+    "perfectionist": "^2.4.0",
+    "ver": "^4.2.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.1"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "eslint": "eslint --quiet --color tools/*.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "major": "npx ver -p major pocket-dark.user.css",
+    "minor": "npx ver -p minor pocket-dark.user.css",
+    "patch": "npx ver -p patch pocket-dark.user.css",
+    "perfectionist": "npx perfectionist pocket-dark.user.css pocket-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --quiet --color -- pocket-dark.user.css",
+    "test": "npm run eslint && npm run stylelint",
+    "update": "npx updates -cu && npm install"
+  }
+}

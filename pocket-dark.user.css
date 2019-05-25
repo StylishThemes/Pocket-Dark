@@ -9,95 +9,69 @@
 @updateURL   https://raw.githubusercontent.com/StylishThemes/Pocket-Dark/master/pocket-dark.user.css
 @license     CC-BY-SA-4.0
 ==/UserStyle== */
-
-@-moz-document domain('getpocket.com') { 
-
-#content .wrapper, #page_reader, body {  background-color: #111 !important }
-.pkt-nav {
-  background: -moz-linear-gradient(top, rgba(41,41,41,1.0) 0%, rgba(41,41,41,1.0) 30%, rgba(31,31,31,1.0) 72%, rgba(21,21,21,1.0) 100%) !important;
-  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(55,55,55, 1)),to(rgba(6,6,6, 1.0))) !important;
-}
-
-#page nav {
-  border-color: #111 !important;
-}
-
-#subnav, .queue {
-  background: none !important;
-}
-
-#content .wrapper {
-  border-left: none !important;
-  border-right: 0px solid #e8e6e6 !important;
-}
-
-.queue_list .item, .grid .queue_list .item {
-  border-color: #000;
-}
-
-#page_search {
-  background: #111;
-  border: 1px solid #000 !important;
-  box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.67), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-}
-
-.grid .queue_list .item *, .grid .queue_list .item .title, .queue_list .item, .grid .queue_list .item {
-  color: #aaa;
-  background-color: #222;
-}
-
-.queue_list .title, #page_search, .queue_list .link {
-  color: #bbb;
-}
-
-.grid .queue_list .item:hover .title span {
-  color: #f90;
-}
-
-.grid .queue_list .item:hover .buttons {
-  background: #222;
-  box-shadow: -10px 0px 5px -2px #222;
-}
-
-body,
-html,
-.story-content h1,
-.story-content h2,
-.story-content p,
-.story-content q,
-.syndication-article-header,
-.outgoing-links .outgoing-links-article-title {
-  color: #919191;
-}
-
-.article-join-us .message,
-.syndicated-article-byline,
-.publisher-cta,
-.publisher-cta .cta-button {
-  color: #505050;
-}
-
-.story-content a,
-.story-content a:visited,
-.article-join-us a,
-.syndicated-article-byline .publisher-name a,
-.outgoing-links .outgoing-links-article-title {
-  color: #1eabf9;
-  text-shadow: none;
-}
-
-.portal-nav,
-.portal-header {
-  background-color: transparent;
-}
-
-.story-footer-container,
-.publisher-cta .cta-button:hover {
-  background-color: #222;
-}
-
-.overflow-nav {
-  background-color: #111;
-}
-
+@-moz-document domain('getpocket.com') {
+  #content .wrapper, #page_reader, body {
+    background-color: #111 !important;
+  }
+  .pkt-nav {
+    background: -moz-linear-gradient(top, rgba(41, 41, 41, 1) 0%, rgba(41, 41, 41, 1) 30%, rgba(31, 31, 31, 1) 72%, rgba(21, 21, 21, 1) 100%) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 1)), to(rgba(6, 6, 6, 1))) !important;
+  }
+  #page nav {
+    border-color: #111 !important;
+  }
+  #subnav, .queue {
+    background: none !important;
+  }
+  #content .wrapper {
+    border-left: none !important;
+    border-right: 0 solid #e8e6e6 !important;
+  }
+  .queue_list .item, .grid .queue_list .item {
+    border-color: #000;
+  }
+  #page_search {
+    background: #111;
+    border: 1px solid #000 !important;
+    box-shadow: 1px 1px 1px rgba(100, 100, 100, .67), inset 1px 1px 2px 0 rgba(0, 0, 0, .25);
+  }
+  .grid .queue_list .item *, .grid .queue_list .item .title, .queue_list .item,
+  .grid .queue_list .item {
+    color: #aaa;
+    background-color: #222;
+  }
+  .queue_list .title, #page_search, .queue_list .link {
+    color: #bbb;
+  }
+  .grid .queue_list .item:hover .title span {
+    color: #f90;
+  }
+  .grid .queue_list .item:hover .buttons {
+    background: #222;
+    box-shadow: -10px 0 5px -2px #222;
+  }
+  body, html, .story-content h1, .story-content h2, .story-content p,
+  .story-content q, .syndication-article-header,
+  .outgoing-links .outgoing-links-article-title {
+    color: #919191;
+  }
+  .article-join-us .message, .syndicated-article-byline, .publisher-cta,
+  .publisher-cta .cta-button {
+    color: #505050;
+  }
+  .story-content a, .story-content a:visited, .article-join-us a,
+  .syndicated-article-byline .publisher-name a,
+  .outgoing-links .outgoing-links-article-title {
+    color: #1eabf9;
+    text-shadow: none;
+  }
+  .portal-nav, .portal-header {
+    background-color: transparent;
+  }
+  .story-footer-container, .publisher-cta .cta-button:hover {
+    background-color: #222;
+  }
+  .overflow-nav {
+    background-color: #111;
+  }
 }

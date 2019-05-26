@@ -200,21 +200,6 @@
   .coreform-container {
     border: 1px solid var(--mid-gray-two);
   }
-  #content .wrapper, #page_reader, body {
-    background-color: var(--black) !important;
-  }
-  #page nav {
-    border-color: var(--black) !important;
-  }
-  #subnav, .queue {
-    background: none !important;
-  }
-  nav li a {
-    color: #bebebe !important;
-  }
-  a {
-    color: #2ba6cb;
-  }
   .btn-important, .btn-secondary {
     color: var(--white);
     text-shadow: 0 1px 0 hsla(0, 0%, 100%, .5);
@@ -232,48 +217,6 @@
     background-image: -webkit-gradient(left top, left bottom, color-stop(0, var(--dark-gray)), color-stop(100%, var(--mid-gray-two)));
     background-image: linear-gradient(180deg, var(--dark-gray) 0, var(--mid-gray-two));
     border-color: var(--mid-gray);
-  }
-  #content .wrapper {
-    border-left: none !important;
-    border-right: 0 solid #e8e6e6 !important;
-  }
-  .queue_list .item, .grid .queue_list .item {
-    border-color: black;
-  }
-  #page_search {
-    background: var(--black);
-    border: 1px solid black !important;
-    box-shadow: 1px 1px 1px rgba(100, 100, 100, .67), inset 1px 1px 2px 0 rgba(0, 0, 0, .25);
-  }
-  .grid .queue_list .item *, .grid .queue_list .item .title, .queue_list .item,
-  .grid .queue_list .item {
-    color: #aaa;
-    background-color: var(--mid-gray);
-  }
-  .queue_list .title, #page_search, .queue_list .link {
-    color: #bbb;
-  }
-  .grid .queue_list .item:hover .title span {
-    color: #f90;
-  }
-  .grid .queue_list .item:hover .buttons {
-    background: var(--mid-gray);
-    box-shadow: -10px 0 5px -2px var(--mid-gray);
-  }
-  #page .pkt-nav {
-    background-color: var(--black);
-  }
-  .portal-nav, .portal-header {
-    background-color: var(--mid-gray);
-  }
-  .story-footer-container, .publisher-cta .cta-button:hover {
-    background-color: var(--mid-gray);
-  }
-  .overflow-nav {
-    background-color: var(--black);
-  }
-  .story-content h1, .story-content h2, .syndication-article-header {
-    color: var(--light-gray-two);
   }
   body, .story-content p, .story-content q,
   .outgoing-links .outgoing-links-article-title {

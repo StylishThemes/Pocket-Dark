@@ -209,10 +209,15 @@
     background-image: linear-gradient(180deg, var(--dark-gray) 0, var(--mid-gray-two));
     border-color: var(--mid-gray);
   }
+  .btn:hover {
+    background-position: 0 -45px;
+    color: var(--white);
+  }
   /* root styling */
   body {
     color: var(--icon-gray);
     background-color: var(--black) !important;
+    border-color: var(--mid-gray);
   }
   #warning-browserincompatible {
     background-color: var(--black);
@@ -228,6 +233,9 @@
   }
   .header-global nav a:hover, #header #nav li a:hover, #header #nav li.selected {
     border-color: var(--dark-gray);
+  }
+  .navbar .navbar-inner {
+    background: var(--black);
   }
   .portal-nav ul li a, .header-nav-lacroix nav a {
     color: var(--light-gray);
@@ -322,6 +330,9 @@
   .side-nav {
     background-color: var(--really-black);
   }
+  .nav-list li.active a {
+    color: var(--white) !important;
+  }
   #page .pkt-nav, .overflow-nav {
     background-color: var(--mid-gray);
     border: none;
@@ -341,7 +352,7 @@
     border: none;
   }
   .popover-new-bottom .arrow, .popover-new-bottom .arrow:after,
-  .popover-new-bottomleft .arrow, .popover-new-bottomleft .arrow::after {
+  .popover-new-bottomleft .arrow, .popover-new-bottomleft .arrow:after {
     border-bottom-color: var(--mid-gray-two);
   }
   .no-touch .popover-new .popover-new-list a:hover {
@@ -352,6 +363,24 @@
   }
   #pagenav_options_container .popover-new-list a {
     color: var(--icon-gray);
+  }
+  .pagination ul > li > a, .pagination ul > li > span {
+    background-color: var(--mid-gray-two) !important;
+    border-color: var(--black) !important;
+  }
+  .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a,
+  .pagination ul > .active > span {
+    background-color: var(--med-blue) !important;
+    color: var(--white);
+  }
+  .pagination ul > .active > a, .pagination ul > .active > span {
+    color: var(--light-gray);
+    background-color: var(--mid-gray-two) !important;
+  }
+  .pagination ul > .disabled > span, .pagination ul > .disabled > a,
+  .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus {
+    color: var(--light-gray) !important;
+    background-color: transparent !important;
   }
   .page_queue_list .item_content, .page_queue_grid .item_content,
   .page_queue_grid .item .sub {
@@ -482,6 +511,7 @@
   .contentWrapper {
     background-color: var(--black);
     color: var(--mid-gray-two);
+    border-color: var(--mid-gray-two);
   }
   /* help page */
   #fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol,
@@ -506,8 +536,18 @@
   #sidebar .nav-list .active a:focus {
     color: var(--mid-gray-two);
   }
+  .category-list .category {
+    border-color: var(--mid-gray-two);
+  }
   .category-list .category:hover {
-    background-color: var(--dark-gray);
+    background-color: var(--dark-gray-two);
+  }
+  .category-list .category:hover h3 {
+    color: var(--white);
+  }
+  #docsSearch {
+    background: var(--mid-gray-two);
+    border-bottom: 1px solid var(--mid-gray-two);
   }
   #contactModal h2, .abuse h2 {
     background-color: var(--black);
@@ -522,7 +562,7 @@
     color: var(--icon-gray);
     background-color: var(--mid-gray);
   }
-  #serp-dd .result>li.active, #serp-dd .result a:hover {
+  #serp-dd .result > li.active, #serp-dd .result a:hover {
     background-color: var(--mid-gray-two);
   }
   select, textarea, input[type="text"], input[type="password"],
@@ -530,9 +570,24 @@
   input[type="month"], input[type="time"], input[type="week"],
   input[type="number"], input[type="email"], input[type="url"],
   input[type="search"], input[type="tel"], input[type="color"],
-  .uneditable-input {
+  .uneditable-input, #sidebar form .search-query {
     color: var(--icon-gray);
     background-color: var(--black);
+    border: 1px solid var(--mid-gray-two);
+  }
+  textarea:focus, input:focus, input[type="text"]:focus,
+  input[type="password"]:focus, input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus, input[type="date"]:focus,
+  input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus,
+  input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
+  .uneditable-input:focus, #sidebar form .search-query:focus {
+    color: var(--white);
+    border-color: var(--med-blue);
+    opacity: .6;
+  }
+  .most-pop-articles .popArticles li a {
+    color: var(--mid-gray-three);
   }
   /* Premium page */
   .premium-form > form {

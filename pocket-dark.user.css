@@ -17,6 +17,7 @@
     --mid-gray-two: #333;
     --dark-gray: #505050;
     --dark-gray-two: #444;
+    --dark-gray-three: #666;
     --icon-gray: #919191;
     --icon-gray-two: #989797;
     --mid-gray-three: #b2b2b2;
@@ -28,6 +29,7 @@
     --sky-blue: #1eabf9;
     --med-blue: #4885ed;
     --weird-blue: #478f8f;
+    --light-blue: #5dcfca;
     --btn-red-one: #d3505a;
     --btn-red-two: #ee5f64;
     --btn-red-three: #d13644;
@@ -175,19 +177,37 @@
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
     border-bottom: 1px solid var(--mid-gray-two);
   }
+  .signup-disclaimer a {
+    color: var(--icon-gray) !important;
+  }
+  .signup-disclaimer a:hover {
+    color: var(--mid-gray-three) !important;
+  }
   .footer-global {
     border-top: 1px solid var(--mid-gray-two);
   }
   .header-global li:first-child a, .header-global nav a {
     border-top: .333em solid var(--mid-gray-two);
-    font-size: .875em;
-    padding: 1.9em 1em;
   }
   .coreform-container .btn-secondary, .coreform-container .btn-secondary:hover {
     color: var(--white);
   }
   .coreform-container h2 {
-    border-bottom: 1px solid var(--mid-gray-three);
+    border-bottom: 1px solid var(--dark-gray-three);
+  }
+  .coreform-container {
+    background-color: var(--mid-gray);
+    border: none;
+  }
+  .coreform-container h2, .coreform-container p {
+    color: var(--icon-gray);
+  }
+  .coreform-container p > a {
+    color: var(--med-blue);
+    border: none;
+  }
+  .coreform-container .login-error, .coreform-container .login-msg {
+    background-color: var(--black);
   }
   /* buttons everywhere */
   .btn-important, .btn-secondary, .login-btn-firefox .text, .login .btn-small {
@@ -209,7 +229,7 @@
     background-image: linear-gradient(180deg, var(--dark-gray) 0, var(--mid-gray-two));
     border-color: var(--mid-gray);
   }
-  .btn:hover {
+  .btn:hover, .login-btn-firefox:hover {
     background-position: 0 -45px;
     color: var(--white);
   }
@@ -231,8 +251,11 @@
   #header #nav li a, .header-global li:first-child a, .header-global nav a {
     border-color: var(--mid-gray-two);
   }
-  .header-global nav a:hover, #header #nav li a:hover, #header #nav li.selected {
+  #header #nav li a:hover, #header #nav li.selected {
     border-color: var(--dark-gray);
+  }
+  .header-global nav a:hover {
+    border-color: var(--light-blue);
   }
   .navbar .navbar-inner {
     background: var(--black);
@@ -254,21 +277,7 @@
     background-color: var(--mid-gray);
   }
   .signup-ordivider {
-    filter: invert(30%);
-  }
-  .coreform-container {
-    background-color: var(--mid-gray);
-    border: none;
-  }
-  .coreform-container h2, .coreform-container p {
-    color: var(--icon-gray);
-  }
-  .coreform-container p > a {
-    color: var(--med-blue);
-    border: none;
-  }
-  .coreform-container .login-error, .coreform-container .login-msg {
-    background-color: var(--black);
+    filter: brightness(50%);
   }
   .page-add p {
     color: var(--icon-gray);
@@ -368,8 +377,8 @@
     background-color: var(--mid-gray-two) !important;
     border-color: var(--black) !important;
   }
-  .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a,
-  .pagination ul > .active > span {
+  .pagination ul > li > a:hover, .pagination ul > li > a:focus,
+  .pagination ul > .active > a, .pagination ul > .active > span {
     background-color: var(--med-blue) !important;
     color: var(--white);
   }
@@ -594,6 +603,10 @@
     background-color: var(--mid-gray);
     border: none;
   }
+  .page-premium .premium-form .premium-divider, .premium-tabledetail .row,
+  .page-premium .premium-divider {
+    border-color: var(--dark-gray-three);
+  }
   .page-premium .premium-form .premium-divider > h5 {
     background-color: var(--mid-gray);
   }
@@ -610,20 +623,22 @@
     color: var(--light-gray-two);
   }
   .page-premium .premium-features h4 {
-    color: var(--dark-gray);
+    color: var(--white);
   }
   .page-premium .premium-form, .page-premium .premium-divider > h5 {
     background-color: var(--black);
   }
-  .premium-tabledetail p, .premium-tabledetail h5,
-  .premium-tabledetail .featuretable-premium h5 {
+  .premium-tabledetail p, .premium-tabledetail h5 {
     color: var(--light-gray-two);
   }
+  .premium-tabledetail .featuretable-premium h5 {
+    color: var(--light-blue);
+  }
   .premium-tabledetail .row-header .featuretable-premium {
-    background-color: var(--mid-gray-two);
+    background-color: var(--black);
   }
   .premium-tabledetail .check {
-    filter: invert(100%);
+    filter: brightness(80%);
   }
   /* secondary pages */
   .legacy-container {

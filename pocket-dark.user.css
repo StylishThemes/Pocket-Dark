@@ -344,6 +344,9 @@
   .more-from-pocket .related-article .details .title:hover {
     color: var(--sky-blue);
   }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--mid-gray-three) !important;
+  }
   .more-from-pocket .related-article .details .title, .story-content a,
   .story-content a:visited, .article-join-us a,
   .syndicated-article-byline .publisher-name a,

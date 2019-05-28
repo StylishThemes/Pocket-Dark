@@ -378,8 +378,11 @@
     border-bottom-color: var(--icon-gray);
   }
   .gsf_device_reminder {
-    background-color: var(--mid-gray);
-    border-color: var(--mid-gray-two);
+    background-color: var(--mid-gray-two);
+    border-color: var(--dark-gray-two);
+  }
+  .gsf_device_reminder p {
+    color: var(--icon-gray-two);
   }
   /* side-nav cant be a different color than the list bg else somethin looks broken */
   .side-nav {

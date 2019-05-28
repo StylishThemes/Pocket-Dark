@@ -231,10 +231,24 @@
     border-color: var(--dark-gray-three);
     background-color: var(--dark-gray-three);
   }
+  .edit-content, .page-edit .tag-detail {
+    background-color: var(--mid-gray);
+    border-color: var(--dark-gray-two);
+  }
+  .page-edit .item-detail {
+    border-color: var(--dark-gray-two);
+  }
+  .page-edit h2, .page-extsave h2 {
+    color: var(--mid-gray-three);
+  }
   /* buttons everywhere */
   a.btn.signupinterim-btn-login, a.btn.signupinterim-btn-signup,
-  a.btn.btn-importantalt, a.button.button-disabled, .container a.button {
-    color: var(--white);
+  a.btn.btn-importantalt, a.button.button-disabled, .container a.button,
+  a.btn-secondary {
+    color: var(--white) !important;
+  }
+  a.btn-secondary-disabled {
+    color: var(--icon-gray) !important;
   }
   .btn-important, .btn-secondary, .login-btn-firefox .text, .login .btn-small {
     color: var(--white);

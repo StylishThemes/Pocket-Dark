@@ -497,6 +497,12 @@
   .item_content_actionscontainer {
     border-top-color: var(--dark-gray);
   }
+  .persistent-actions .save-pocket {
+    filter: invert(1) brightness(80%);
+  }
+  .persistent-actions .save-pocket:hover {
+    filter: none;
+  }
   .page_queue_grid .item .title, .page_queue_list .item .title {
     color: var(--icon-gray);
   }

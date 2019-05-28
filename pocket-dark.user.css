@@ -338,7 +338,7 @@
   }
   .article-join-us .message, .syndicated-article-byline, .publisher-cta,
   .publisher-cta .cta-button {
-    color: var(--dark-gray);
+    color: var(--mid-gray-three);
   }
   .article-join-us a:hover, .story-content a:hover,
   .more-from-pocket .related-article .details .title:hover {

@@ -33,6 +33,9 @@
     --btn-red-one: #d3505a;
     --btn-red-two: #ee5f64;
     --btn-red-three: #d13644;
+    --dark-red: #300;
+    --light-red: #f33;
+    --red: #f00;
   }
   /* front page */
   .mktg-bg--l-gray {
@@ -206,13 +209,29 @@
     color: var(--med-blue);
     border: none;
   }
-  .coreform-container .login-error, .coreform-container .login-msg {
+  .coreform-container .login-msg {
     background-color: var(--black);
   }
+  .coreform-container .login-error {
+    background: var(--dark-red);
+    color: var(--light-red);
+  }
+  .coreform-container .error-bubble {
+    background: var(--dark-red);
+    border-color: var(--red);
+    color: var(--light-red);
+  }
+  .coreform-container .error-arrow:after {
+    background: var(--dark-red);
+  }
   /* buttons everywhere */
+  a.btn.signupinterim-btn-login, a.btn.signupinterim-btn-signup,
+  a.btn.btn-importantalt, a.button.button-disabled, .container a.button {
+    color: var(--white);
+  }
   .btn-important, .btn-secondary, .login-btn-firefox .text, .login .btn-small {
     color: var(--white);
-    text-shadow: 0 1px 0 hsla(0, 0%, 100%, .5);
+    text-shadow: none;
   }
   .btn, .login-btn-firefox {
     background-color: var(--btn-red-one);
@@ -220,7 +239,7 @@
     background-image: linear-gradient(180deg, var(--btn-red-two) 0, var(--btn-red-one));
     border: 1px solid var(--btn-red-three);
     color: var(--white);
-    text-shadow: 0 -1px 0 rgba(142, 4, 17, .5);
+    text-shadow: none;
   }
   .btn-secondary, .signup-btn-google, .login-btn-firefox, .login-btn-email,
   .forgot-btn-submit, .btn-purchase-premium, #nav .login a {
@@ -243,6 +262,9 @@
     background-color: var(--black);
   }
   /* main nav */
+  #header {
+    border-bottom-color: var(--dark-gray);
+  }
   #header #nav .login a {
     color: var(--white) !important;
     text-shadow: none;
@@ -252,7 +274,7 @@
     border-color: var(--mid-gray-two);
   }
   #header #nav li a:hover, #header #nav li.selected {
-    border-color: var(--dark-gray);
+    border-color: var(--light-blue);
   }
   .header-global nav a:hover {
     border-color: var(--light-blue);
@@ -313,8 +335,12 @@
     filter: invert(90%);
   }
   /* explore page */
+  .portal_intro {
+    background-color: var(--dark-gray);
+    border-bottom-color: var(--dark-gray-three);
+  }
   .topic-heading h2 {
-    color: var(--light-gray-two);
+    color: var(--light-gray);
   }
   .best_of_list, .topic-heading, .trending_list, body.pocket-hits #container {
     background-color: var(--black);
@@ -326,21 +352,37 @@
     color: var(--icon-gray);
   }
   .flag-trending {
-    background-color: var(--mid-gray-two);
+    background-color: var(--med-blue);
+  }
+  .flag {
+    color: var(--white);
   }
   .title_sponsor a, .title a, body.pocket-hits a, body.pocket-hits .post_title a {
     color: var(--med-blue);
   }
   /* queue page */
+  #queue_empty p, .nav-default a {
+    color: var(--icon-gray) !important;
+  }
+  .item_image {
+    border-bottom-color: var(--icon-gray);
+  }
   .gsf_device_reminder {
     background-color: var(--mid-gray);
     border-color: var(--mid-gray-two);
   }
+  /* side-nav cant be a different color than the list bg else somethin looks broken */
   .side-nav {
-    background-color: var(--really-black);
+    background-color: inherit;
   }
   .nav-list li.active a {
     color: var(--white) !important;
+  }
+  .nav-default .nav-selected, .nav-default .nav-selected:hover {
+    color: var(--white) !important;
+  }
+  .nav-default-divider {
+    border-bottom-color: var(--icon-gray);
   }
   #page .pkt-nav, .overflow-nav {
     background-color: var(--mid-gray);
@@ -355,10 +397,16 @@
   #pagenav_options_container .nav-icon, #pagenav_options .nav-downnotch {
     filter: invert(70%);
   }
+  #pagenav_optionsdivider {
+    border-left-color: var(--icon-gray);
+  }
   #pagenav_options_container .popover-new {
     color: var(--light-gray);
     background-color: var(--mid-gray-two);
     border: none;
+  }
+  .pkt-nav .pagenav_sectiontoggle .queue_togglesection_optionselected {
+    color: var(--light-blue);
   }
   .popover-new-bottom .arrow, .popover-new-bottom .arrow:after,
   .popover-new-bottomleft .arrow, .popover-new-bottomleft .arrow:after {
@@ -392,9 +440,12 @@
     background-color: transparent !important;
   }
   .page_queue_list .item_content, .page_queue_grid .item_content,
-  .page_queue_grid .item .sub {
+  .page_queue_grid .item .sub, .item_content_text, .recommend_footer {
     background-color: var(--mid-gray-two);
     border: none;
+  }
+  .item_content_actionscontainer {
+    border-top-color: var(--dark-gray);
   }
   .page_queue_grid .item .title, .page_queue_list .item .title {
     color: var(--icon-gray);
@@ -434,9 +485,18 @@
     background-color: var(--black);
     border: none;
   }
-  #search_close > a, #searchnav_sortby > a,
-  #searchSortMenu .search-sortby-options .search-sortby-selected {
+  #search_close > a, #searchnav_sortby > a {
     filter: invert(70%);
+  }
+  #searchSortMenu .search-sortby-options .search-sortby-selected {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  #searchSortMenu .search-sortby-options .search-sortby-selected:hover {
+    filter: invert(100%) hue-rotate(180deg) brightness(90%);
+  }
+  #searchSortMenu .search-sortby-options a {
+    filter: none;
+    color: var(--icon-gray);
   }
   #searchSortMenu .container, .search-instr-recent, .section-filter,
   .section-filter .section-filter-options {
@@ -444,14 +504,19 @@
     border: none;
   }
   .section-filter-value, .section-filter .section-filter-options a {
-    color: var(--light-gray);
+    color: var(--mid-gray-three);
   }
-  #searchSortMenu .search-sortby-options .search-sortby-selected {
-    color: var(--icon-gray);
+  .section-filter-disabled .section-filter-downnotch {
+    opacity: .7;
+    filter: invert(1);
+  }
+  .section-filter-downnotch {
+    opacity: 1;
+    filter: invert(1);
   }
   #searchSortMenu .search-sortby-options a:hover,
   .no-touch .section-filter .section-filter-options a:hover {
-    background-color: var(--dark-gray-two);
+    background-color: var(--dark-gray);
   }
   /* reader view */
   .page-reader #page .pkt-nav, .reader_explore_bar {
@@ -484,15 +549,35 @@
   .reader_head h1 {
     color: var(--light-gray-two);
   }
-  .reader_content {
+  .reader_content, #addMenu .container input {
     color: var(--icon-gray);
   }
   .popover-new .popover-new-list a {
     color: var(--light-gray);
   }
+  ::selection {
+    background: var(--dark-gray-three);
+  }
+  .overlay_screen_light {
+    background: var(--black);
+  }
+  .overlay_screen_light h2, .overlay_screen_light p {
+    border-bottom-color: var(--dark-gray-two);
+    color: var(--icon-gray);
+  }
   .overlay_screen .overlay_detail {
     color: var(--light-gray);
     background-color: var(--mid-gray-two);
+  }
+  .overlay_screen_light .overlay_createpasswordcontainer {
+    background: var(--mid-gray-two);
+    border-color: var(--dark-gray-two);
+    color: var(--white);
+  }
+  .overlay_screen_light .form-field input, .page-account .legacy-content h2,
+  .page-account .change-options, .page-account .legacy-content .validate,
+  #addMenu .container input, .coreform-container .form-field input {
+    border-color: var(--icon-gray);
   }
   .token-input-dropdown-fortag, .token-input-list {
     border: none;
@@ -517,10 +602,49 @@
   .page-account .legacy-content h2 {
     color: var(--icon-gray);
   }
+  .legacy-content {
+    border-color: var(--dark-gray);
+  }
+  .legacy-content a:hover, .legacy-sidebar a:hover {
+    color: var(--light-blue);
+  }
+  .legacy-sidebar h5 > a, .page-account .legacy-content h4, #sidebar ul li a {
+    color: var(--icon-gray-two);
+  }
+  #sidebar h3, #sidebar h3 a {
+    color: var(--icon-gray-two);
+    text-shadow: none;
+  }
+  .content-welcome {
+    background: var(--mid-gray);
+    border-color: var(--dark-gray);
+  }
+  #content, .content_section {
+    background: var(--mid-gray) !important;
+    border-color: var(--icon-gray) !important;
+    box-shadow: 0 1px 0 0 var(--mid-gray) !important;
+  }
   .contentWrapper {
     background-color: var(--black);
     color: var(--mid-gray-two);
     border-color: var(--mid-gray-two);
+  }
+  .app_icons li a, .app_icons li small, .app_rows li a {
+    color: var(--icon-gray);
+  }
+  .app_icons li a:hover {
+    color: var(--icon-gray-two);
+    filter: brightness(120%);
+  }
+  .app_rows li a:hover {
+    background-color: var(--mid-gray);
+  }
+  .app_rows li {
+    border-color: var(--dark-gray-two);
+  }
+  .page-account .options_list li {
+    border-bottom-color: var(--mid-gray-two);
+    background: var(--mid-gray-two);
   }
   /* help page */
   #fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol,
@@ -562,10 +686,16 @@
     background-color: var(--black);
   }
   /* search boxes */
+  .explore_search input {
+    border-color: var(--icon-gray);
+  }
   .explore_search input, .explore_search.search_toolbar input,
   #sidebar form .search-query {
-    color: var(--icon-gray);
+    color: var(--white);
     background-color: var(--black);
+  }
+  #serp-dd {
+    border-color: var(--dark-gray);
   }
   #serp-dd .result {
     color: var(--icon-gray);
@@ -591,8 +721,8 @@
   input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus,
   input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
   .uneditable-input:focus, #sidebar form .search-query:focus {
-    color: var(--white);
-    border-color: var(--med-blue);
+    color: var(--white) !important;
+    border-color: var(--med-blue) !important;
     opacity: .6;
   }
   .most-pop-articles .popArticles li a {
@@ -647,8 +777,8 @@
   .legacy-content {
     background-color: var(--mid-gray);
   }
-  .legacy-sidebar h3, .legacy-sidebar h5, .legacy-sidebar h5 > a {
-    color: var(--weird-blue);
+  .legacy-sidebar h3, .legacy-sidebar h5 {
+    color: var(--white);
   }
   /* jobs page */
   .page-jobs .job-list ul {
@@ -694,10 +824,18 @@
   }
   #container footer {
     background-color: var(--mid-gray);
+    border-top-color: var(--icon-gray);
+    border-bottom-color: var(--icon-gray);
   }
   #sidebar h5 {
-    color: var(--light-gray-two);
+    color: var(--mid-gray-three);
     text-shadow: none;
+  }
+  #sidebar a:hover {
+    color: var(--light-blue);
+  }
+  img[src*="mask70.png"] {
+    opacity: 0;
   }
   .welcome header, .welcome .description, #content.landing .learn_more h2,
   #content.landing .learn_more h4 {

@@ -224,6 +224,13 @@
   .coreform-container .error-arrow:after {
     background: var(--dark-red);
   }
+  .container-bulkedit {
+    background-color: inherit;
+  }
+  .bulkedit-cancel {
+    border-color: var(--dark-gray-three);
+    background-color: var(--dark-gray-three);
+  }
   /* buttons everywhere */
   a.btn.signupinterim-btn-login, a.btn.signupinterim-btn-signup,
   a.btn.btn-importantalt, a.button.button-disabled, .container a.button {
@@ -364,6 +371,9 @@
   #queue_empty p, .nav-default a {
     color: var(--icon-gray) !important;
   }
+  .no-touch .nav-default a:hover {
+    color: var(--light-blue) !important;
+  }
   .item_image {
     border-bottom-color: var(--icon-gray);
   }
@@ -394,8 +404,20 @@
     color: var(--light-gray);
   }
   #pagenav_searchicon > a, #pagenav_addarticle > a, #pagenav_inbox > a,
-  #pagenav_options_container .nav-icon, #pagenav_options .nav-downnotch {
+  #pagenav_options_container .nav-icon, #pagenav_options .nav-downnotch,
+  .gsf_device_reminder .close {
     filter: invert(70%);
+  }
+  #pagenav_searchicon > a:hover, #pagenav_addarticle a:hover,
+  #pagenav_inbox a:hover {
+    filter: invert(0%) brightness(100%);
+  }
+  .pagenav_gridview > a:hover, .pagenav_bulkedit a:hover,
+  .pagenav_gridlist a:hover {
+    filter: brightness(290%);
+  }
+  .popover-new-listitem a:hover span {
+    filter: brightness(100%) !important;
   }
   #pagenav_optionsdivider {
     border-left-color: var(--icon-gray);
@@ -408,9 +430,16 @@
   .pkt-nav .pagenav_sectiontoggle .queue_togglesection_optionselected {
     color: var(--light-blue);
   }
+  .popover-new-centeredleft .arrow, .popover-new-centeredleft .arrow::after {
+    border-right-color: var(--mid-gray-two);
+  }
   .popover-new-bottom .arrow, .popover-new-bottom .arrow:after,
-  .popover-new-bottomleft .arrow, .popover-new-bottomleft .arrow:after {
-    border-bottom-color: var(--mid-gray-two);
+  .popover-new-bottomleft .arrow, .popover-new-bottomleft .arrow:after,
+  .popover-new-bottomright .arrow {
+    border-bottom-color: var(--mid-gray-two) !important;
+  }
+  .popover-new .arrow, .popover-new .arrow::after {
+    border-color: transparent;
   }
   .no-touch .popover-new .popover-new-list a:hover {
     background-color: var(--mid-gray);
@@ -443,6 +472,10 @@
   .page_queue_grid .item .sub, .item_content_text, .recommend_footer {
     background-color: var(--mid-gray-two);
     border: none;
+  }
+  .recommend_footer .item_content_actionscontainer:hover a,
+  .recommend_footer .item_content_actionscontainer:hover span {
+    color: var(--btn-red-three);
   }
   .item_content_actionscontainer {
     border-top-color: var(--dark-gray);

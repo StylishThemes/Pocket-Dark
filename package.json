@@ -28,7 +28,7 @@
     "minor": "npx ver -p minor pocket-dark.user.css",
     "patch": "npx ver -p patch pocket-dark.user.css",
     "perfectionist": "npx perfectionist pocket-dark.user.css pocket-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --quiet --color -- pocket-dark.user.css",
+    "stylelint": "npx stylelint --color -- pocket-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "npx updates -cu && npm install"
   }

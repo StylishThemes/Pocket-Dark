@@ -356,6 +356,10 @@
   .outgoing-links .outgoing-links-article-title {
     color: var(--icon-gray);
   }
+  .story-page .story-content ul li, .story-page .story-content ul li p,
+  .story-page .story-content ul li span {
+    color: var(--icon-gray);
+  }
   .article-join-us .message, .syndicated-article-byline, .publisher-cta,
   .publisher-cta .cta-button {
     color: var(--mid-gray-three);

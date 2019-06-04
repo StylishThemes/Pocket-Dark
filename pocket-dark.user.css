@@ -342,9 +342,6 @@
   .signup-ordivider {
     filter: brightness(50%);
   }
-  .page-add p {
-    color: var(--icon-gray);
-  }
   .page-add h2, .page-add h3 {
     color: var(--light-gray-two);
   }
@@ -353,23 +350,34 @@
     color: var(--light-gray-two);
   }
   .story-content p, .story-content q,
-  .outgoing-links .outgoing-links-article-title {
-    color: var(--icon-gray);
-  }
-  .story-page .story-content ul li, .story-page .story-content ul li p,
-  .story-page .story-content ul li span {
+  .outgoing-links .outgoing-links-article-title, .page-add p {
     color: var(--icon-gray);
   }
   .article-join-us .message, .syndicated-article-byline, .publisher-cta,
-  .publisher-cta .cta-button {
+  .publisher-cta .cta-button, .story-page .story-content ul li {
     color: var(--mid-gray-three);
   }
   .article-join-us a:hover, .story-content a:hover,
   .more-from-pocket .related-article .details .title:hover {
     color: var(--sky-blue);
   }
-  h1, h2, h3, h4, h5, h6, p {
+  h1, h2, h3, h4, h5, h6 {
     color: var(--mid-gray-three) !important;
+  }
+  .syndication-article-header .subhead, .story-page .story-content ul li {
+    color: var(--light-gray) !important;
+  }
+  .story-page .footer .signoff p, .comments .comment .content .date {
+    color: var(--dark-gray-three);
+  }
+  .mfp-divider {
+    border-color: var(--mid-gray-two);
+  }
+  .footer .divider {
+    background-color: var(--mid-gray-two);
+  }
+  .comments .comment .comment-text {
+    border-color: var(--dark-gray-two);
   }
   .more-from-pocket .related-article .details .title, .story-content a,
   .story-content a:visited, .article-join-us a,
@@ -380,7 +388,7 @@
   }
   .footer .signoff .publisher-logo,
   .more-from-pocket .related-article .details .publisher-logo {
-    filter: invert(90%);
+    filter: invert(90%) brightness(80%);
   }
   /* explore page */
   .portal_intro {

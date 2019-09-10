@@ -293,6 +293,11 @@
     background-position: 0 -45px;
     color: var(--white);
   }
+  .header-global nav .btn {
+    background-color: var(--mid-gray-two);
+    background-image: linear-gradient(180deg, var(--mid-gray) 0, var(--mid-gray-two));
+    border-top-color: var(--black);
+  }
   /* root styling */
   body {
     color: var(--icon-gray);
@@ -329,6 +334,21 @@
   .portal-nav, .portal-header, .header-global, .story-footer-container,
   .footer-global, .publisher-cta .cta-button:hover {
     color: var(--light-gray-two);
+    background-color: var(--mid-gray);
+  }
+  .css-711a0m {
+    background-color: var(--mid-gray);
+    border-bottom-color: var(--dark-gray-two);
+  }
+  .css-1h60lfy, .mktg-footer, .package .wrapper {
+    background-color: var(--black);
+  }
+  .css-ff0ul7 {
+    background-color: var(--black);
+    border-color: var(--dark-gray-two);
+    color: var(--white);
+  }
+  .css-obxhop {
     background-color: var(--mid-gray);
   }
   /* signup and login */
@@ -861,6 +881,15 @@
   }
   .premium-tabledetail .check {
     filter: brightness(80%);
+  }
+  .premium-hero figure {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  .premium-hero p, .hero-tile p, .quote-tile .quote, .stats-tile .post {
+    color: var(--light-gray-two);
+  }
+  .package .plan {
+    color: var(--light-gray);
   }
   /* secondary pages */
   .legacy-container {

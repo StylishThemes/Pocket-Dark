@@ -351,6 +351,12 @@
   .css-obxhop {
     background-color: var(--mid-gray);
   }
+  .css-10scaen {
+    color: var(--light-gray) !important;
+  }
+  .css-rg5q7m {
+    color: var(--light-gray);
+  }
   /* signup and login */
   .forgot-content, .signup-content, .wrapper-savefrombrowser, .wrapper-unlimited,
   .wrapper-waystosave {
@@ -409,6 +415,10 @@
   .footer .signoff .publisher-logo,
   .more-from-pocket .related-article .details .publisher-logo {
     filter: invert(90%) brightness(80%);
+  }
+  .css-d86t8w {
+    background-color: var(--mid-gray);
+    border-color: var(--dark-gray-two);
   }
   /* explore page */
   .portal_intro {

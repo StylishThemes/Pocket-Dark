@@ -369,6 +369,15 @@
   .css-4z0h1o, .css-4z0h1o:hover {
     color: var(--light-gray-two);
   }
+  .css-7m0e3m-ExploreContainer {
+    border-bottom: var(--dark-gray-three);
+    background-color: var(--mid-gray);
+  }
+  .css-z6iw5e-SearchInput {
+    color: var(--light-gray-two);
+    background-color: var(--black);
+    border-color: var(--dark-gray-three);
+  }
   /* signup and login */
   .forgot-content, .signup-content, .wrapper-savefrombrowser, .wrapper-unlimited,
   .wrapper-waystosave {

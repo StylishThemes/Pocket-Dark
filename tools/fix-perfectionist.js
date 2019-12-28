@@ -13,6 +13,7 @@ function cleanup(css) {
     // }/* comment */ => }\n\n  /* comment */
     .replace(/}\/\*(([\s\S])+?)\*\/\s*/g, "}\n\n  /*$1*/\n  ")
     .replace(/,\s\/\*/g, ",\n  /*")
+    .replace(/\s+regexp\(/g, "\nregexp(")
     // Remove extra carriage returns between definitions
     .replace(/\n+/g, "\n");
 }
@@ -20,7 +21,7 @@ function cleanup(css) {
 async function postPerfectionist() {
   const css = await fs.readFile(fileName, "utf8");
   await fs.writeFile(fileName, cleanup(css));
-  console.log("\x1b[32m%s\x1b[0m", `${pkg.title} usercss cleanup completed`);
+  console.info("\x1b[32m%s\x1b[0m", `${pkg.title} usercss cleanup completed`);
 }
 
 postPerfectionist();

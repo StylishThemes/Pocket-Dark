@@ -4,7 +4,7 @@
   "version": "1.2.9",
   "description": "A dark Pocket theme",
   "license": "CC-BY-SA-4.0",
-  "repository": "StylishThemes/Pocket-Dark",
+  "repository": "https://github.com/StylishThemes/Pocket-Dark",
   "homepage": "https://github.com/StylishThemes/Pocket-Dark",
   "main": "pocket-dark.user.css",
   "engines": {
@@ -22,14 +22,13 @@
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
-    "eslint": "eslint --quiet --color tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
-    "major": "npx ver -p major *.user.css",
-    "minor": "npx ver -p minor *.user.css",
-    "patch": "npx ver -p patch *.user.css",
+    "eslint": "eslint tools/*.js",
+    "major": "versions -p -C major pocket-dark.user.css",
+    "minor": "versions -p -C minor pocket-dark.user.css",
+    "patch": "versions -p -C patch pocket-dark.user.css",
     "perfectionist": "npx perfectionist pocket-dark.user.css pocket-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --color -- pocket-dark.user.css",
+    "stylelint": "stylelint pocket-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && npm install"
+    "update": "updates -cu && npm install"
   }
 }

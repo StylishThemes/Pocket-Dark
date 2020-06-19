@@ -345,7 +345,7 @@
     color: var(--light-gray-two);
     background-color: var(--mid-gray);
   }
-  .css-711a0m {
+  #__next > header {
     background-color: var(--mid-gray);
     border-bottom-color: var(--dark-gray-two);
   }
@@ -378,6 +378,9 @@
     background-color: var(--black);
     border-color: var(--dark-gray-three);
   }
+  header div.logo {
+    filter: brightness(1.5);
+  }
   /* signup and login */
   .forgot-content, .signup-content, .wrapper-savefrombrowser, .wrapper-unlimited,
   .wrapper-waystosave {
@@ -396,7 +399,7 @@
   .story-content h1, .story-content h2, .syndication-article-header {
     color: var(--light-gray-two);
   }
-  .story-content p, .story-content q,
+  .story-content p, .story-content q, .body,
   .outgoing-links .outgoing-links-article-title, .page-add p {
     color: var(--icon-gray);
   }
@@ -404,7 +407,7 @@
   .publisher-cta .cta-button {
     color: var(--mid-gray-three);
   }
-  .article-join-us a:hover, .story-content a:hover,
+  .article-join-us a:hover, .story-content a:hover, #__next a:hover,
   .more-from-pocket .related-article .details .title:hover {
     color: var(--sky-blue);
   }
@@ -414,8 +417,10 @@
   .syndication-article-header .subhead {
     color: var(--light-gray) !important;
   }
-  .story-page .story-content ul li, .story-content ol.numlist li,
-  .story-page .blockquote p, .story-page .blockquote q {
+  .story-page .story-content ul li p, .story-page .story-content ul li span,
+  .story-page .story-content ol li, .story-page .story-content ul li,
+  .story-content ol.numlist li, .story-page .blockquote p,
+  .story-page .blockquote q {
     color: var(--light-gray);
   }
   .story-page .footer .signoff p, .comments .comment .content .date {
@@ -470,6 +475,10 @@
   }
   .title_sponsor a, .title a, body.pocket-hits a, body.pocket-hits .post_title a {
     color: var(--med-blue);
+  }
+  #__next article > a .title span {
+    background: transparent;
+    text-shadow: none;
   }
   /* queue page */
   #queue_empty p, .nav-default a {

@@ -36,6 +36,7 @@
     --dark-red: #300;
     --light-red: #f33;
     --red: #f00;
+    --color-textPrimary: #777;
   }
   /* front page */
   .mktg-bg--l-gray {
@@ -173,6 +174,9 @@
   .mktg-footer__copyright {
     color: var(--icon-gray-two);
   }
+  .brandBlock aside, .brandBlock blockquote {
+    background-color: transparent;
+  }
   /* login/signup stuff */
   @keyframes autofill {
     to {
@@ -210,11 +214,18 @@
   .signup-disclaimer a:hover {
     color: var(--mid-gray-three) !important;
   }
+  #__next footer.with-border {
+    background-color: var(--mid-gray);
+    border-top-color: var(--mid-gray-two);
+  }
   .footer-global {
     border-top: 1px solid var(--mid-gray-two);
   }
   .header-global li:first-child a, .header-global nav a {
     border-top: .333em solid var(--mid-gray-two);
+  }
+  .isVisible aside {
+    background-color: var(--mid-gray);
   }
   .coreform-container .btn-secondary, .coreform-container .btn-secondary:hover {
     color: var(--white);

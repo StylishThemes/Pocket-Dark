@@ -1,3 +1,5 @@
+**Retired:** Pocket has shut down.
+
 <h1 align="center">Pocket Dark</h1>
 <br>
 <p align="center">
